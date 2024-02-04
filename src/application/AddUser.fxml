@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddUserController">
+   <children>
+      <ImageView fx:id="newsback" fitHeight="32.0" fitWidth="41.0" layoutX="99.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backbutton" layoutX="94.0" layoutY="623.0" mnemonicParsing="false" onAction="#switchToUserManage" opacity="0.0" text="Button" />
+      <Pane layoutX="-4.0" layoutY="-1.0" prefHeight="95.0" prefWidth="1306.0" style="-fx-background-color: #003333; -fx-border-color: #000000; -fx-border-radius: 10px;">
+         <children>
+            <Text fill="WHITE" layoutX="138.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add User" wrappingWidth="429.13589286804216">
+               <font>
+                  <Font name="Arial Black" size="34.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="27.0" fitWidth="42.0" layoutX="96.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rectangle-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="1052.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="1123.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amir Rehman" wrappingWidth="151.2032470703125">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="saveuser" layoutX="555.0" layoutY="539.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="36.0" prefWidth="95.0" text="SAVE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="370.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="135.5999999999999">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="598.0" layoutY="245.0" prefHeight="42.0" prefWidth="237.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Text layoutX="368.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Password" wrappingWidth="203.83334350585938">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userpass" layoutX="598.0" layoutY="317.0" prefHeight="40.0" prefWidth="237.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Text layoutX="368.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Email" wrappingWidth="126.93334350585928">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="102.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Management" wrappingWidth="224.80338287353516">
+         <font>
+            <Font name="Arial Black" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#695555" layoutX="102.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home&gt;Permissions and Accounts&gt;User Management&gt;Add User" wrappingWidth="429.1358928680422">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="useremail" layoutX="598.0" layoutY="387.0" prefHeight="40.0" prefWidth="237.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Text fx:id="added" fill="#417542" layoutX="591.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
